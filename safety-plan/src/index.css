@@ -7,7 +7,7 @@
 }
 
 .navbar {
-  background-color: black;
+  background-color: rgb(8, 43, 96);
   color: whitesmoke;
   display: flex;
   position: absolute;
@@ -51,6 +51,7 @@ h2 {
   font-size: 45px;
   padding-top:10px;
   margin-bottom:20px;
+  color: rgb(8, 43, 96);
 }
 
 .question-container {
@@ -64,14 +65,17 @@ h2 {
 .under-title {
   width: 30px;
   margin: auto;
-  border: 3px solid black;
+  border-width: 2px;
+  border-color: rgb(8, 43, 96);
   margin-bottom: 30px;
 }
 
 .question {
   margin: 20px 0 10px;
   font-size: 20px;
+  color: rgb(8, 43, 96);
 }
+
 
 
 input {
@@ -80,6 +84,7 @@ input {
 
 input[type='radio'], input[type='checkbox'] {
   margin-top: 5px;
+  accent-color: rgb(14, 58, 125);
 }
 
 .radio-label {
@@ -163,11 +168,14 @@ hr {
   font-size: 25px;
   border: 0px;
   border-radius: 15px;
-  margin: 20px 0 30px 10px;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 .printbtndiv {
   width:100%;
+  display: flex;
+  justify-content: center;
 }
 
 .print-button:hover {
@@ -205,6 +213,7 @@ input, textarea {
   }
 }
 
+
 @media only screen and (max-width: 600px)  {
   hr, .create, .question-container {
     width: 85vw;
@@ -215,6 +224,26 @@ input, textarea {
   .prev-button {
     margin-bottom: 10px;
   }
+}
+
+
+@media only screen and (max-width: 600px) {
+  h2 {
+    font-size: 35px;
+  }
+
+  .question, .group h4 {
+    font-size: 15px;
+  }
+
+  label {
+    font-size:15px;
+  }
+
+  .next-button, .prev-button, .submit-button, .print-button {
+    font-size: 15px;
+  }
+  
 }
 
 
