@@ -3,7 +3,7 @@
 * {
   margin:0;
   font-family: 'Montserrat';
-  
+  overflow-wrap: break-word;
 }
 
 .navbar {
@@ -38,21 +38,6 @@
   margin-top:90px;
 }
 
-.blog-list {
-  width: 60vw;
-  margin:auto;
-}
-
-.blog-list h1 {
-  text-align: center;
-}
-
-.blog-preview {
-  margin:10px 0;
-  background: lightblue;
-  padding: 20px 3vw;
-  border-radius: 3vw;
-}
 
 
 .create {
@@ -205,4 +190,45 @@ input, textarea {
 
 .indentedlist {
   margin-left:30px;
+}
+
+
+@media only screen and (max-width: 1100px)  {
+  hr, .create, .question-container {
+    width: 65vw;
+  }
+}
+
+@media only screen and (max-width: 800px)  {
+  hr, .create, .question-container {
+    width: 72vw;
+  }
+}
+
+@media only screen and (max-width: 600px)  {
+  hr, .create, .question-container {
+    width: 85vw;
+  }
+  .buttons{
+    flex-direction: column;
+  }
+  .prev-button {
+    margin-bottom: 10px;
+  }
+}
+
+
+@media only print {
+  hr, .create, .question-container {
+    width: 85vw;
+  }
+  .navbar{
+    display: none;
+  }
+  .printbtndiv {
+    display:none;
+  }
+  .content {
+    margin-top:20px;
+  }
 }
