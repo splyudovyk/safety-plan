@@ -45,7 +45,7 @@ const Create = () => {
             {id: 6, var: q6, varupdater: setQ6, part: 'n', topic: 'homealone', question: 'When you are home alone, whom can you call to come stay with you?', type: 'text'},
             {id: 7, var: q7, varupdater: setQ7, part: 'n', topic: 'constantleavework', question: 'If you need to leave school or work, who can you call to pick you up?', type: 'text'},
             {id: 8, var: q8, varupdater: setQ8, part: 'y', topic: 'contactrelationship', question: 'If you decide to end your relationship, whom can you call for support?', type: 'text'},
-            {id: 9, var: q9, varupdater: setQ9, part: 'n', topic: 'emergencycontacts', question: 'Do you have any other emergency contacts you haven\'t listed yet? Include phone numbers. List each new contact in a new line.', type: 'textarea',
+            {id: 9, var: q9, varupdater: setQ9, part: 'n', topic: 'emergencycontacts', question: 'Do you have any emergency contacts you haven\'t listed? Include phone numbers. List each new contact in a new line.', type: 'textarea',
                     othervar: q17, othervarupdater: setQ17, counter: contactcounter, counterupdater: setContactCounter}
         ],
         [
@@ -379,6 +379,7 @@ const Create = () => {
                                 <li>{item}</li>
                             ))}
                         </ul>
+                        <h4 className='note'>Make sure you memorize at least one of these numbers for future references.</h4>
                     </div>
                     <hr/>
 
