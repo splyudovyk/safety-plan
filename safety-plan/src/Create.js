@@ -43,7 +43,7 @@ const Create = () => {
         [
             {id: 5, var: q5, varupdater: setQ5, part: 'n', topic: 'code', question: 'What is a code or phrase you can use to call/text a friend/family member for help? If you don\'t have one already, create one and discuss it with the friend/family member.', type: 'text'},
             {id: 6, var: q6, varupdater: setQ6, part: 'n', topic: 'homealone', question: 'When you are home alone, whom can you call to come stay with you?', type: 'text'},
-            {id: 7, var: q7, varupdater: setQ7, part: 'n', topic: 'constantleavework', question: 'If you need to leave school or work, who can you call to pick you up?', type: 'text'},
+            {id: 7, var: q7, varupdater: setQ7, part: 'n', topic: 'constantleavework', question: 'If you need to leave school or work, whom can you call to pick you up?', type: 'text'},
             {id: 8, var: q8, varupdater: setQ8, part: 'y', topic: 'contactrelationship', question: 'If you decide to end your relationship, whom can you call for support?', type: 'text'},
             {id: 9, var: q9, varupdater: setQ9, part: 'n', topic: 'emergencycontacts', question: 'Do you have any emergency contacts you haven\'t listed? Include phone numbers. List each new contact in a new line.', type: 'textarea',
                     othervar: q17, othervarupdater: setQ17, counter: contactcounter, counterupdater: setContactCounter}
@@ -91,6 +91,8 @@ const Create = () => {
                 responses.splice(3,0,q4);
 
                 setPageNum(pageNum+1);
+                
+                window.scrollTo(0,0);
             }
         }
         if (pageNum == 2) {
@@ -111,6 +113,7 @@ const Create = () => {
 
                 setPageNum(pageNum+1);
 
+                window.scrollTo(0,0);
             }
         }
         if (pageNum == 3) {
@@ -131,6 +134,8 @@ const Create = () => {
                 responses.splice(13,0,q16);
 
                 setPageNum(pageNum+1);
+
+                window.scrollTo(0,0);
             }
         }
 
@@ -165,6 +170,8 @@ const Create = () => {
     const changePageBack = () => {
         setPageNum(pageNum-1);
         /*setResponses([q1,q2,q3,q4,q5,q6,q7,q8,q9,q10,q11,q12,q13,q14,q15,q16,q17]);*/
+        
+        window.scrollTo(0,0);
     }
 
     const submitForm = () => {
@@ -175,6 +182,8 @@ const Create = () => {
             responses.splice(15,0,q15);
             
             setPageType('results');
+
+            window.scrollTo(0,0);
         }
 
         /*setResponses([q1,q2,q3,q4,q5,q6,q7,q8,q9,q10,q11,q12,q13,q14,q15,q16,q17]);*/
