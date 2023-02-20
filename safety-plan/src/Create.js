@@ -337,30 +337,27 @@ const Create = () => {
                     <h2>Your Safety Plan</h2>
                     <hr className='under-title'></hr>
 
-                    <div className='group'>
-                        {responses[0] == 'Female' && 
-                            <div>
+                    {responses[0] == 'Female' && 
+                        <div className='female'>
+                            <div className='group'>
                                 <h4>Women's Resources</h4>
                                 <p>Healthcare resources: <a href='https://nwhn.org/other-resources/'>https://nwhn.org/other-resources/</a></p>
                                 <p>Women's centers & domestic violence resources: <a href='https://www.nj.gov/dcf/women/domestic/'>https://www.nj.gov/dcf/women/domestic/</a></p>
-                                            
-                                
                             </div>
-                        }
-                    </div>
-                    {responses[0] == 'Female' && <hr/>}
+                            <hr />
+                        </div>
+                    }
 
-                    <div className='group'>
-                        {(responses[0] == 'Other' | responses[1] != 'Straight') && 
-                            <div>
+                    {(responses[0] == 'Other' || responses[1] != 'Straight') &&
+                        <div className='lgbt'> 
+                            <div className='group'>
                                 <h4>LGBT Resources</h4>
                                 <p>Healthcare resources: <a href='https://www.affirmingpathways.com/new-jersey-lgbtq-resources'>https://www.affirmingpathways.com/new-jersey-lgbtq-resources</a></p>
                                 <p>LGBT centers & resources: <a href='https://www.nj.gov/dcf/adolescent/lgbtqi/'>https://www.nj.gov/dcf/adolescent/lgbtqi/</a></p>
-                                
                             </div>
-                        }
-                    </div>
-                    {(responses[0] == 'Other' | responses[1] != 'Straight') && <hr/>}
+                            <hr />
+                        </div>
+                    }
 
                     <div className='group'>
                         <h4>When I need to call someone for help, I can use my code word...</h4>
