@@ -351,7 +351,7 @@ const Create = () => {
                     {responses[0] == 'Female' && <hr/>}
 
                     <div className='group'>
-                        {responses[1] != 'Straight' && 
+                        {(responses[0] == 'Other' | responses[1] != 'Straight') && 
                             <div>
                                 <h4>LGBT Resources</h4>
                                 <p>Healthcare resources: <a href='https://www.affirmingpathways.com/new-jersey-lgbtq-resources'>https://www.affirmingpathways.com/new-jersey-lgbtq-resources</a></p>
@@ -360,7 +360,7 @@ const Create = () => {
                             </div>
                         }
                     </div>
-                    {responses[1] != 'Straight' && <hr/>}
+                    {(responses[0] == 'Other' | responses[1] != 'Straight') && <hr/>}
 
                     <div className='group'>
                         <h4>When I need to call someone for help, I can use my code word...</h4>
